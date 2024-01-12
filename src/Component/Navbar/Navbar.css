@@ -2,7 +2,7 @@ h3 {
   font-size: 6rem;
 }
 .navbar {
-  background-color: rgb(98, 255, 0);
+  background-color: aqua;
   padding: 10px 5vw;
   display: flex;
   justify-content: space-between;
