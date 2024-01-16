@@ -1,7 +1,11 @@
-function Button({value}) {
+function Button({value,Display}) {
+  function display() {
+    Display(value);
+
+  }
  
   return(
-    <button>{value}</button>
+    <button onClick={display}>{value}</button>
   )
 }
 export default Button;
