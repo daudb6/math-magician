@@ -2,50 +2,45 @@ import './Calculator.css';
 import Button from './Button';
 import { useState } from 'react';
 function Calculator() {
-  const[display,setDisplay] = useState("0");
-
-  function Display(e) {
-    setDisplay(e);
-    console.log(e)
-  }
+const[calculaterState, setCalculaterState] = useState(null);
   
   return(
     <div className="c-main">
-      <div className="display">{display}</div>
+      <div className="display">{calculaterState || '0'}</div>
       <div className="row-button">
         
-        <Button Display={Display} value = "Ac"/>
-        <Button Display={Display} value = "+/-"/>
-        <Button Display={Display} value = "%"/>
-        <Button Display={Display} value = "/"/>
+        <Button  value = "Ac" setState = {setCalculaterState} />
+        <Button  value = "+/-"setState = {setCalculaterState} />
+        <Button  value = "%" setState = {setCalculaterState} />
+        <Button  value = "/" setState = {setCalculaterState} />
            
       </div>
 
       <div className="row-button">
-      <Button Display={Display} value = "7" />
-      <Button Display={Display} value = "8"  />
-      <Button Display={Display} value = "9" />
-      <Button Display={Display} value = "X" />
+      <Button  value = "7"  setState = {setCalculaterState}/>
+      <Button  value = "8"  setState = {setCalculaterState} />
+      <Button  value = "9" setState = {setCalculaterState} />
+      <Button  value = "X" setState = {setCalculaterState} />
       </div>
 
       <div className="row-button">
-      <Button Display={Display} value = "4"  />
-      <Button Display={Display} value = "5"  />
-      <Button Display={Display} value = "6"  />
-      <Button Display={Display} value = "-"  />
+      <Button  value = "4"  setState = {setCalculaterState} />
+      <Button  value = "5"  setState = {setCalculaterState} />
+      <Button  value = "6"  setState = {setCalculaterState} />
+      <Button  value = "-"  setState = {setCalculaterState} />
       </div>
 
       <div className="row-button">
-      <Button Display={Display} value = "1"  />
-      <Button Display={Display} value = "2" />
-      <Button Display={Display} value = "3" />
-      <Button Display={Display} value = "+" />
+      <Button  value = "1"  setState = {setCalculaterState} />
+      <Button  value = "2" setState = {setCalculaterState} />
+      <Button  value = "3" setState = {setCalculaterState} />
+      <Button  value = "+" setState = {setCalculaterState} />
       </div>
 
       <div className="row-button last">
-      <Button Display={Display} value = "0"  />
-      <Button Display={Display} value = "." />
-      <Button Display={Display} value = "=" />
+      <Button  value = "0"  setState = {setCalculaterState} />
+      <Button  value = "." setState = {setCalculaterState} />
+      <Button  value = "=" setState = {setCalculaterState} />
         
       </div>
     </div>

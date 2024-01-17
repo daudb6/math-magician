@@ -1,11 +1,9 @@
-function Button({value,Display}) {
-  function display() {
-    Display(value);
-
-  }
+import Calculate from "./Calculate";
+function Button({value,setState}) {
+ 
  
   return(
-    <button onClick={display}>{value}</button>
+    <button onClick={() => setState((prevState) => Calculate(prevState, value))} >{value}</button>
   )
 }
 export default Button;
