@@ -1,12 +1,32 @@
 import './Calculator.css';
 import Button from './Button';
 import { useState } from 'react';
+
+const initialState = {
+  next:null,
+  total:null,
+  operation:null
+}
 function Calculator() {
-const[calculaterState, setCalculaterState] = useState(null);
+const[calculaterState, setCalculaterState] = useState(initialState);
+
+
+function display() {
+ if (calculaterState.operation && !calculaterState.next){
+  return(`${calculaterState.total || ""} ${calculaterState.operation}`)
+ }
+ if (calculaterState.operation && calculaterState.next){
+  return(`${calculaterState.total || ""} ${calculaterState.operation} ${calculaterState.next}` )
+ }
+  return(
+    calculaterState.next || calculaterState.operation || calculaterState.total || "0"
+  )
+
+}
   
   return(
     <div className="c-main">
-      <div className="display">{calculaterState || '0'}</div>
+      <div className="display">{display()}</div>
       <div className="row-button">
         
         <Button  value = "Ac" setState = {setCalculaterState} />
