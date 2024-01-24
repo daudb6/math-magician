@@ -1,6 +1,7 @@
 import './Calculator.css';
 import Button from './Button';
 import { useState } from 'react';
+import Navbar from '../Navbar/Navbar';
 
 const initialState = {
   next:null,
@@ -25,8 +26,14 @@ function display() {
 }
   
   return(
+    <>
+    <Navbar />
+    <div className='container'>
+    <div className='left-side'>Lets Do Some Math!</div>
     <div className="c-main">
+      <div className='main-display'>
       <div className="display">{display()}</div>
+      </div>
       <div className="row-button">
         
         <Button  value = "Ac" setState = {setCalculaterState} />
@@ -58,12 +65,14 @@ function display() {
       </div>
 
       <div className="row-button last">
-      <Button  value = "0"  setState = {setCalculaterState} />
+      <Button className='btn1'  value = "0"  setState = {setCalculaterState} />
       <Button  value = "." setState = {setCalculaterState} />
       <Button  value = "=" setState = {setCalculaterState} />
         
       </div>
     </div>
+    </div>
+    </>
   )
 
 }

@@ -1,4 +1,4 @@
-import Calculate from "./Calculate";
+import Calculate from "../Logic/Calculate";
 function Button({value,setState}) {
  
  

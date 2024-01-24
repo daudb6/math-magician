@@ -1,0 +1,67 @@
+.c-main {
+  width: 330px;
+  height: 400px;
+  padding-top: 2rem;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.row-button button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.row-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 5px;
+}
+
+.main-display {
+  margin-left: 2rem;
+}
+
+.display {
+  background-color: #2c2c2e;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 20px;
+  height: 51px;
+  margin-bottom: 20px;
+  width: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
+}
+
+.last :nth-child(1) {
+  flex: 2;
+}
+.last :nth-child(1) {
+  background-color: #eaeaea;
+  border-radius: 35px;
+  color: #333;
+  font-size: 20px;
+  height: 55px;
+  width: 56px;
+  max-width: 120px;
+}
+.row-button :last-child {
+  background-color: orange;
+}
+
+.left-side {
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  color: #fff;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 13rem;
+  background-color: #3c87dc;
+  height: 100vh;
+}

@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.main {
+  background-color: #fff;
+  width: 600px;
+  height: 40vh;
+  border-radius: 20px;
+  padding: 5rem 4.5rem;
+}
+.home-section {
+  background-color: #3c87dc;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 2rem;
+  color: teal;
+  background: transparent;
+  margin-bottom: 1rem;
+}
+.description {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+  margin-left: 30px;
+}
+ul {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+li {
+  margin-left: 3.7rem;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+p {
+  margin-left: 4.3rem;
+  margin-top: 20px;
+  font-size: 1rem;
+}
