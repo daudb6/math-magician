@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  background-color: #1e3147;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 2.3rem;
+  padding-left: 5rem;
+  padding-top: 1rem;
+}
+nav {
+  margin-right: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.home {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+.calculator {
+  font-size: 1.7rem;
+  color: #fff;
+  text-decoration: none;
+}
+.quote {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.home:hover {
+  color: yellow;
+}
+.calculator:hover {
+  color: yellow;
+}
+.quote:hover {
+  color: yellow;
+}
+.active {
+  color: yellow;
+}
