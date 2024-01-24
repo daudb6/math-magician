@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
     <div className='navbar'>
-      <h1>Mathmagic</h1>
+      <h1 className='logo'>Mathmagic</h1>
      <nav> 
 
      <NavLink to="/" className='home'>Home</NavLink>
