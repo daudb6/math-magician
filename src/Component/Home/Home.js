@@ -1,15 +1,13 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
 import './Home.css'
 
 
 function Home() {
   return (
     <>
-    <Navbar />
     <div className='home-section'>
     <div className='main'>
-      <h1>Welcome To My Calculator Website</h1>
+      <h1 className='heading'>Welcome To My Calculator Website</h1>
       <p className='description'>This Website is designed to provide you with a convenient and user Friendly Calculator.</p>
       <ul>Features of our Calculator </ul>
       <li>Basic Arithmetic operation Such as addition,Subtraction.</li>

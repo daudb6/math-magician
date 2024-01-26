@@ -1,7 +1,7 @@
 import './Calculator.css';
 import Button from './Button';
 import { useState } from 'react';
-import Navbar from '../Navbar/Navbar';
+
 
 const initialState = {
   next:null,
@@ -27,7 +27,6 @@ function display() {
   
   return(
     <>
-    <Navbar />
     <div className='container'>
     <div className='left-side'>Lets Do Some Math!</div>
     <div className="c-main">
