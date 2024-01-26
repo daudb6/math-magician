@@ -46,3 +46,22 @@
   animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
     both;
 }
+@media (max-width: 630px) {
+  .box {
+    margin: 10% auto;
+    width: 80vw;
+  }
+}
+@media (max-width: 580px) {
+  .para {
+    width: 300px;
+  }
+}
+@media (max-width: 510px) {
+  p {
+    margin-left: 0;
+  }
+  .para {
+    font-size: 1.2rem;
+  }
+}

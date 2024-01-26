@@ -3,37 +3,33 @@
   padding: 0;
 }
 .navbar {
-  width: 100vw;
-  height: 10vh;
   background-color: #1e3147;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 2% 10%;
 }
 .logo {
-  font-size: 2.3rem;
-  padding-left: 5rem;
-  padding-top: 0.5rem;
+  font-size: 22px;
 }
 nav {
-  margin-right: 10rem;
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 1rem;
 }
 
 .home {
-  font-size: 1.5rem;
+  font-size: 22px;
   color: white;
   text-decoration: none;
 }
 .calculator {
-  font-size: 1.7rem;
+  font-size: 22px;
   color: #fff;
   text-decoration: none;
 }
 .quote {
-  font-size: 1.5rem;
+  font-size: 22px;
   color: #fff;
   text-decoration: none;
 }
@@ -49,4 +45,25 @@ nav {
 }
 .active {
   color: yellow;
+}
+
+@media (max-width: 600px) {
+  .home {
+    font-size: 20px;
+  }
+  .calculator {
+    font-size: 20px;
+  }
+  .quote {
+    font-size: 20px;
+  }
+  .navbar {
+    padding: 2% 6%;
+  }
+}
+
+@media (max-width: 430px) {
+  nav {
+    display: none;
+  }
 }
